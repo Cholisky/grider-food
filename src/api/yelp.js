@@ -4,6 +4,6 @@ import { YELP_BEARER } from '../../tokens';
 export default axios.create({
   baseURL: 'https://api.yelp.com/v3/businesses',
   headers: {
-    Authorization: YELP_BEARER,
+    Authorization: `Bearer ${YELP_BEARER}`,
   }
 });
